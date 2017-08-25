@@ -32,7 +32,6 @@
     <modules>
         <module>cloud-demo-config</module>
         <module>cloud-demo-registry</module>
-        <module>cloud-demo-service</module>
     </modules>
 
     <dependencyManagement>
