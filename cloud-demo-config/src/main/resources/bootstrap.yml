@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cloud-demo-config
+  profiles:
+    active: @active.profile@
+
+encrypt:
+  failOnError: false
+  keyStore:
+    location: classpath:/server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme
+
