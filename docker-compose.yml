@@ -1,9 +1,24 @@
-version: '2'
+version: '3'
+
 services:
+  rabbitmq:
+    image: rabbitmq:${RABBITMQ_VERSION}
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+    restart: always
+    ports:
+      - 15672:15672
+      - 5672:5672
+    volumes:
+      - ./infra/rabbitmq/:/var/lib/rabbitmq
 
   cloud-demo-config:
     image: mradul/cloud-demo-config:${TAG}
     container_name: cloud-demo-config
+    ports:
+        - 8888:8888
     restart: always
     logging:
       options:
@@ -13,6 +28,8 @@ services:
   cloud-demo-registry:
     image: mradul/cloud-demo-registry:${TAG}
     container_name: cloud-demo-registry
+    ports:
+        - 8761:8761
     restart: always
     logging:
       options:

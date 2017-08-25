@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-demo-config" />
         <module name="cloud-demo-registry" />
-        <module name="cloud-demo-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

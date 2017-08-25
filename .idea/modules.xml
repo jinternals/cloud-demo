@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-demo.iml" filepath="$PROJECT_DIR$/cloud-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-demo-config/cloud-demo-config.iml" filepath="$PROJECT_DIR$/cloud-demo-config/cloud-demo-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-demo-registry/cloud-demo-registry.iml" filepath="$PROJECT_DIR$/cloud-demo-registry/cloud-demo-registry.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-demo-service/cloud-demo-service.iml" filepath="$PROJECT_DIR$/cloud-demo-service/cloud-demo-service.iml" />
     </modules>
   </component>
 </project>

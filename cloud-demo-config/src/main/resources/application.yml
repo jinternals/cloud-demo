@@ -26,7 +26,7 @@ eureka:
       defaultZone: http://cloud-demo-registry:8761/eureka/
     healthcheck:
           enabled: true
-    enabled: false
+    enabled: true
 
 spring:
   rabbitmq:
@@ -39,8 +39,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jinternals/cloud-demo-config.git
-          username: pandeymradul
+          uri: https://github.com/jinternals/cloud-demo-config
           basedir: target/config
           force-pull: true
 
@@ -48,12 +47,15 @@ security:
   user:
     password: password
 
+
+
+
 ---
 spring:
   profiles: development
   rabbitmq:
     host: localhost
-    email: admin
+    username: admin
     password: password
 
 eureka:
