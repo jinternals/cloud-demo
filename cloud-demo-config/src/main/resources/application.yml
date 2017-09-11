@@ -42,6 +42,8 @@ spring:
           uri: https://github.com/jinternals/cloud-demo-config
           basedir: target/config
           force-pull: true
+      discovery:
+        serviceId: ${spring.application.name}
 
 security:
   user:

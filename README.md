@@ -8,5 +8,4 @@ Run and up services:
 
 To reproduce error run following curl command:
  
-curl-X POST http://user:password@localhost:8888/monitor?path=application
-
+curl -X POST http://user:password@localhost:8888/monitor -d path="*"
